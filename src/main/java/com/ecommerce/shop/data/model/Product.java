@@ -19,7 +19,7 @@ public class Product {
     private Currency currency;
     @Column(length= 500)
     private String details;
-    @ElementCollection(fetch = FetchType.EAGER)
+    @ElementCollection()
     private List<String> imageUrl;
     @OneToMany(fetch = FetchType.EAGER)
     private List<FeedBack> feedBacks;
