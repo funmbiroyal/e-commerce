@@ -18,7 +18,7 @@ public class ProductController {
     public ProductController(ProductService productServiceImpl){
         this.productServiceImpl = productServiceImpl;
     }
-    @GetMapping("/")
+    @GetMapping("/get-product")
     public List<Product> getAll(){
         return productServiceImpl.findAll();
     }
